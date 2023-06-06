@@ -30,6 +30,22 @@ function getSum (num1 , num2){
 }
 
 // stampo il risultato della somma
-const result = getSum(userNumber , cpuNumber);
-console.log (result);
+const sumResult = getSum(userNumber , cpuNumber);
+console.log ('La somma è:' + ' ' + sumResult);
+
+// creo una funzione per stabilire se la somma è pari o dispari
+function isEven(number){
+    if ( number % 2 === 0){
+        const even = 'Il risultato è:' + ' ' + 'Pari';
+        return even;
+    } else{
+        const odd = 'Il risultato è:' + ' ' + 'Dispari';
+        return odd;
+    }
+    
+}
+
+// stampo il risultato
+const result = isEven(sumResult);
+console.log(result);
 
